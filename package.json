@@ -1,0 +1,14 @@
+{
+  "name": "ag-charts-enterprise-example",
+  "version": "7.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sean@thelandsmans.com",
+  "license": "ISC",
+  "dependencies": {
+    "ag-charts-enterprise": "~7.0.0"
+  }
+}
