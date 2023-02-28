@@ -1,5 +1,8 @@
 import * as agChartsEnterprise from 'ag-charts-enterprise';
-import { AgChartOptions } from 'ag-charts-enterprise';
+import { AgChartOptions, _ModuleSupport } from 'ag-charts-enterprise';
+
+import { CHART_NAVIGATOR_MODULE } from '@ag-charts-enterprise/navigator';
+_ModuleSupport.registerModule(CHART_NAVIGATOR_MODULE);
 
 const options: AgChartOptions = {
     container: document.getElementById('myChart'),
@@ -34,6 +37,7 @@ const options: AgChartOptions = {
             yKey: 'spending',
         },
     ],
+    navigator: {},
 };
 
 agChartsEnterprise.AgEnterpriseCharts.create(options);

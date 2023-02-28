@@ -13,7 +13,8 @@
   "author": "sean@thelandsmans.com",
   "license": "ISC",
   "dependencies": {
-    "ag-charts-enterprise": "~7.1.0"
+    "ag-charts-enterprise": "~7.1.0",
+    "@ag-charts-enterprise/navigator": "~7.1.0"
   },
   "devDependencies": {
     "typescript": "~4.9.3",
