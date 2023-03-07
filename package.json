@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "run-p watch:* start",
     "watch:ccm": "cd ../../charts-community-modules/ag-charts-community && npm run watch-esm",
-    "watch:cem": "cd ../../charts-enterprise-modules/ag-charts-enterprise && npm run watch-esm",
+    "watch:cem": "cd ../../charts-enterprise-modules/core && npm run watch-esm",
     "watch:enterprise-modules": "lerna run watch-esm --parallel --scope '@ag-charts-enterprise/**'",
     "start": "npx webpack serve --open"
   },
