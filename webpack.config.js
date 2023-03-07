@@ -23,7 +23,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/assets/basic.html'
+            template: 'src/assets/basic.html',
         }),
     ],
     output: {
@@ -31,5 +31,5 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         publicPath: '/',
-    }
+    },
 };
