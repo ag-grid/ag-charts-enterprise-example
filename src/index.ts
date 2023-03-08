@@ -1,5 +1,5 @@
 import * as agChartsEnterprise from '@ag-charts-enterprise/core';
-import { AgChartOptions } from '@ag-charts-enterprise/core';
+import { AgChartOptions, _ModuleSupport } from '@ag-charts-enterprise/core';
 
 const options: AgChartOptions = {
     container: document.getElementById('myChart'),
