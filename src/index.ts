@@ -1,5 +1,8 @@
 import * as agChartsEnterprise from '@ag-charts-enterprise/core';
 import { AgChartOptions, _ModuleSupport } from '@ag-charts-enterprise/core';
+import { ZoomModule } from '@ag-charts-enterprise/zoom';
+
+_ModuleSupport.registerModule(ZoomModule);
 
 const options: AgChartOptions = {
     container: document.getElementById('myChart'),
@@ -34,6 +37,7 @@ const options: AgChartOptions = {
             yKey: 'spending',
         },
     ],
+    zoom: {},
 };
 
 agChartsEnterprise.AgEnterpriseCharts.create(options);
