@@ -17,7 +17,10 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-        library: 'agChartsEnterprise',
+        library: {
+            name: 'window',
+            type: 'assign-properties',
+        },
         filename: 'ag-charts-enterprise-all.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
