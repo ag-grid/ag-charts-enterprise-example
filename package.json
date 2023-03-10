@@ -15,7 +15,8 @@
         "lint:eslint": "npx eslint src/ --ext .js,.ts",
         "fix": "run-s fix:*",
         "fix:prettier": "npx prettier -w .",
-        "fix:eslint": "npx eslint --fix src/ --ext .js,.ts"
+        "fix:eslint": "npx eslint --fix src/ --ext .js,.ts",
+        "bundle-enterprise": "node ./tools/bundle.js && webpack -c webpack.bundle.js"
     },
     "author": "sean@thelandsmans.com",
     "license": "ISC",
