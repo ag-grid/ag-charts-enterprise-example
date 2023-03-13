@@ -11,6 +11,11 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
+            },
         ],
     },
     resolve: {
@@ -23,7 +28,6 @@ module.exports = {
         },
         filename: 'ag-charts-enterprise-all.js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true,
         publicPath: '/',
     },
 };
