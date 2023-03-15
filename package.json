@@ -24,7 +24,8 @@
     "license": "ISC",
     "dependencies": {
         "@ag-charts-enterprise/core": "~7.1.0",
-        "@ag-charts-enterprise/zoom": "~7.1.0"
+        "@ag-charts-enterprise/zoom": "~7.1.0",
+        "@ag-charts-enterprise/crosshair": "~7.1.0"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.51.0",
