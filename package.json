@@ -10,7 +10,7 @@
         "watch:cem": "cd ../../charts-enterprise-modules/core && npm run watch-esm",
         "watch:enterprise-modules": "lerna run watch-esm --parallel --scope '@ag-charts-enterprise/**'",
         "start": "npx webpack serve --open",
-        "start:enterprise-bundle": "npx webpack serve -c webpack.bundle.js",
+        "start:enterprise-bundle": "npx webpack serve -c webpack.bundle.js --port 8082",
         "install-hooks": "husky install .husky",
         "lint": "run-s lint:*",
         "lint:prettier": "npx prettier -c .",
