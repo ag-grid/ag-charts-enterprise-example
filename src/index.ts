@@ -1,8 +1,10 @@
 import * as agChartsEnterprise from '@ag-charts-enterprise/core';
 import { AgChartOptions, _ModuleSupport } from '@ag-charts-enterprise/core';
 import { ZoomModule } from '@ag-charts-enterprise/zoom';
+import { CrosshairModule } from '@ag-charts-enterprise/crosshair';
 
 _ModuleSupport.registerModule(ZoomModule);
+_ModuleSupport.registerModule(CrosshairModule);
 
 const options: AgChartOptions = {
     container: document.getElementById('myChart'),
@@ -31,13 +33,19 @@ const options: AgChartOptions = {
             spending: 44,
         },
     ],
+    axes: [
+        { type: 'category', position: 'bottom', crosshair: {} },
+        { type: 'number', position: 'left', crosshair: {} },
+    ],
     series: [
         {
             xKey: 'year',
             yKey: 'spending',
         },
     ],
-    zoom: {},
+    zoom: {
+        enabled: true,
+    },
 };
 
 agChartsEnterprise.AgEnterpriseCharts.create(options);
