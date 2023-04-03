@@ -12,7 +12,7 @@ const OUTPUT_BUNDLE = TMP_BUNDLE.slice(
     TMP_BUNDLE.findIndex((l) => l.startsWith('// AUTOMATICALLY GENERATED - DO NOT EDIT')) + 1
 );
 
-OUTPUT_BUNDLE.push(...ENTERPRISE_MODULES.map((m) => `export * from '${m}';`));
+// OUTPUT_BUNDLE.push(...ENTERPRISE_MODULES.map((m) => `export * from '${m}';`));
 OUTPUT_BUNDLE.push('');
 
 fs.writeFileSync(`${__dirname}/tmp-bundle.ts`, OUTPUT_BUNDLE.join('\n'));

@@ -23,9 +23,7 @@
     "author": "sean@thelandsmans.com",
     "license": "ISC",
     "dependencies": {
-        "@ag-charts-enterprise/core": "~7.2.0",
-        "@ag-charts-enterprise/zoom": "~7.2.0",
-        "@ag-charts-enterprise/crosshair": "~7.2.0"
+        "@ag-charts-enterprise/core": "~7.2.0"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^5.51.0",

@@ -1,10 +1,5 @@
 import * as agChartsEnterprise from '@ag-charts-enterprise/core';
 import { AgChartOptions, _ModuleSupport } from '@ag-charts-enterprise/core';
-import { ZoomModule } from '@ag-charts-enterprise/zoom';
-import { CrosshairModule } from '@ag-charts-enterprise/crosshair';
-
-_ModuleSupport.registerModule(ZoomModule);
-_ModuleSupport.registerModule(CrosshairModule);
 
 const options: AgChartOptions = {
     container: document.getElementById('myChart'),
