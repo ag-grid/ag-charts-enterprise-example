@@ -1,10 +1,5 @@
 const fs = require('fs');
 
-const PACKAGE_JSON = JSON.parse(fs.readFileSync(`${__dirname}/../package.json`.toString()));
-const ENTERPRISE_MODULES = Object.entries(PACKAGE_JSON.dependencies)
-    .map(([name]) => name)
-    .filter((name) => name.startsWith('@ag-charts-enterprise/') && !name.endsWith('/core'));
-
 const TMP_BUNDLE = fs.readFileSync(`${__dirname}/tmp-bundle.ts`).toString().split('\n');
 
 const OUTPUT_BUNDLE = TMP_BUNDLE.slice(
