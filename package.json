@@ -8,7 +8,7 @@
         "watch-bundle": "run-p watch:* start:enterprise-bundle",
         "watch:ccm": "cd ../../charts-community-modules/ag-charts-community && npm run watch-esm",
         "watch:cem": "cd ../../charts-enterprise-modules/ag-charts-enterprise && npm run watch-esm",
-        "watch:enterprise-modules": "lerna run watch-esm --parallel --scope '@ag-charts-enterprise/**'",
+        "watch:enterprise-modules": "lerna run watch-esm --parallel --scope ag-charts-enterprise --scope '@ag-charts-enterprise/**'",
         "start": "npx webpack serve --open",
         "start:enterprise-bundle": "node ./tools/bundle.js && npx webpack serve -c webpack.bundle.js --port 8082",
         "install-hooks": "husky install .husky",
