@@ -1,3 +1,3 @@
-export * from '@ag-charts-enterprise/ag-charts-enterprise';
+export * from 'ag-charts-enterprise';
 
 // AUTOMATICALLY GENERATED - DO NOT EDIT
