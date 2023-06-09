@@ -1,14 +1,14 @@
 {
   "name": "ag-charts-enterprise-example",
-  "version": "7.2.0",
+  "version": "8.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "watch": "run-p watch:* start",
     "watch-bundle": "run-p watch:* start:enterprise-bundle",
     "watch:ccm": "cd ../../charts-community-modules/ag-charts-community && npm run watch-esm",
-    "watch:cem": "cd ../../charts-enterprise-modules/core && npm run watch-esm",
-    "watch:enterprise-modules": "lerna run watch-esm --parallel --scope '@ag-charts-enterprise/**'",
+    "watch:cem": "cd ../../charts-enterprise-modules/ag-charts-enterprise && npm run watch-esm",
+    "watch:enterprise-modules": "lerna run watch-esm --parallel --scope ag-charts-enterprise --scope '@ag-charts-enterprise/**'",
     "start": "npx webpack serve --open",
     "start:enterprise-bundle": "node ./tools/bundle.js && npx webpack serve -c webpack.bundle.js --port 8082",
     "install-hooks": "husky install .husky",
@@ -23,14 +23,12 @@
   "author": "sean@thelandsmans.com",
   "license": "ISC",
   "dependencies": {
-    "@ag-charts-enterprise/core": "~7.2.0",
-    "@ag-charts-enterprise/zoom": "~7.2.0",
-    "@ag-charts-enterprise/crosshair": "~7.2.0"
+    "ag-charts-enterprise": "~8.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
-    "ag-charts-community": "~7.2.0",
+    "ag-charts-community": "~8.0.0",
     "eslint": "^8.35.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
