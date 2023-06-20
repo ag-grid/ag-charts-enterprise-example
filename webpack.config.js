@@ -9,6 +9,7 @@ module.exports = {
         static: './dist',
         // hot: true,
     },
+    stats: 'errors-warnings',
     module: {
         rules: [
             {
