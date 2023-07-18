@@ -5,6 +5,11 @@
         "module": "es6",
         "target": "es5",
         "allowJs": true,
-        "moduleResolution": "node"
-    }
+        "moduleResolution": "node",
+        "sourceMap": true
+    },
+    "references": [
+        { "path": "../../charts-community-modules/ag-charts-community/tsconfig.watch.json" },
+        { "path": "../../charts-enterprise-modules/ag-charts-enterprise/tsconfig.watch.json" }
+    ]
 }

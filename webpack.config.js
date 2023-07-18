@@ -9,11 +9,12 @@ module.exports = {
         static: './dist',
         // hot: true,
     },
+    stats: 'errors-warnings',
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
+                use: { loader: 'ts-loader', options: { projectReferences: true } },
                 exclude: /node_modules/,
             },
             {
@@ -25,6 +26,10 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        alias: {
+            'ag-charts-community': path.resolve(__dirname, 'node_modules/ag-charts-community/src/main.ts'),
+            'ag-charts-enterprise': path.resolve(__dirname, 'node_modules/ag-charts-enterprise/src/main.ts'),
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
